@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+  <meta content='width=device-width, initial-scale=1, user-scalable=no' name='viewport'>
+  <title>173yy online-遊戲頁面</title>
+  <link href='stylesheets/all.css' media='screen' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <main class="play">
+    <!-- 遊戲區 -->
+    <div class="play-game">
+      <!-- phone選單 -->
+      <nav class="touchBar">
+        <div class="handle"></div>
+        <a href="index.html"><i class="flaticon-home"></i></a>
+        <a href="strongbox.html"><i class="flaticon-deposit"></i></a>
+        <a href="#"><i class="flaticon-line"></i></a>
+        <a href="#" class="link-chat"><i class="flaticon-chat"></i></a>
+        <!-- <a href="member.html"><i class="flaticon-user"></i></a> -->
+        <a href="pay.html"><i class="flaticon-money"></i></a>
+      </nav>
+
+      <!-- 遊戲放這裡 -->
+      <div class="game">
+        <!-- 示意圖 -->
+        <img src="./images/_demo.jpg" style="width: 100%; height: 100%; object-fit: cover; opacity: .5;" alt="">
+      </div>
+    </div>
+
+    <!-- PC側欄 -->
+    <div class="play-aside active">
+      <!-- 側欄 toggle 按扭 -->
+      <button class="btn btn-open active toggle-aside"><i class="flaticon-play"></i></button>
+      <!-- 側欄內容 -->
+      <section>
+        <header class="play-aside_logo">
+          <a href="index.html"><img src="./images/logo.png" alt=""></a>
+        </header>
+        <div class="play-aside_member">
+          <p><span>帳號：121321578745121</span> <button class="btn btn-secondary ml-auto">複製帳號</button></p>
+          <!-- <p>登入來源：訪客</p> -->
+          <!-- 登入後才顯示下面的資料 換掉上面的 登入來源 -->
+          <p class="user">
+            <img src="./images/user.jpg" alt="">
+            <span class="ml-3">line的名字</span>
+          </p>
+        </div>
+        <nav class="play-aside_nav">
+          <!-- <a href="" class="btn btn-warning"><i class="flaticon-line"></i>LINE登入</a> -->
+
+          <!-- 登入後換儲值按扭 -->
+          <a href="" class="btn btn-warning link-chat"><i class="flaticon-chat"></i>聊天</a>
+          <a href="" class="btn btn-warning"><i class="flaticon-null"></i>儲值</a>
+        </nav>
+
+        <!-- 推薦遊戲 -->
+        <h5 class="text-warning mt-3">為你推薦</h5>
+        <div class="game-list multi">
+          <div>
+            <a href=""><img src="./images/game/game-multi-1.jpg" alt=""></a>
+            <p>遊戲名稱-哈哈哈123134444</p>
+            <nav>
+              <a class="btn btn-primary  disabled" href="#">免費試玩</a>
+              <a class="btn btn-warning" href="#">金幣入場</a>
+            </nav>
+          </div>
+          <div>
+            <a href=""><img src="./images/game/game-multi-2.jpg" alt=""></a>
+            <p>遊戲名稱</p>
+            <nav>
+              <a class="btn btn-warning" href="#">免費試玩</a>
+              <a class="btn btn-warning" href="#">金幣入場</a>
+            </nav>
+          </div>
+        </div>
+        <!-- 熱門遊戲 -->
+        <h5 class="text-warning mt-3">熱門遊戲</h5>
+        <div class="game-list single">
+          <div>
+            <a href="">
+              <span class="mark"><i>活動中</i></span>
+              <img src="./images/game/game-single-1.jpg" alt="">
+            </a>
+            <p>遊戲名稱哈哈哈哈</p>
+            <nav>
+              <a class="btn btn-primary  disabled" href="#">免費試玩</a>
+              <a class="btn btn-warning" href="#">金幣入場</a>
+            </nav>
+          </div>
+          <div>
+            <a href="">
+              <span class="mark"><i>活動中</i></span>
+              <img src="./images/game/game-single-1.jpg" alt="">
+            </a>
+            <p>遊戲名稱</p>
+            <nav>
+              <a class="btn btn-primary  disabled" href="#">免費試玩</a>
+              <a class="btn btn-warning" href="#">金幣入場</a>
+            </nav>
+          </div>
+          <div>
+            <a href=""><img src="./images/game/game-single-1.jpg" alt=""></a>
+            <p>遊戲名稱</p>
+            <nav>
+              <a class="btn btn-warning" href="#">免費試玩</a>
+              <a class="btn btn-warning" href="#">金幣入場</a>
+            </nav>
+          </div>
+          <div>
+            <a href=""><img src="./images/game/game-single-1.jpg" alt=""></a>
+            <p>遊戲名稱</p>
+            <nav>
+              <a class="btn btn-warning" href="#">免費試玩</a>
+              <a class="btn btn-warning" href="#">金幣入場</a>
+            </nav>
+          </div>
+          <div>
+            <a href=""><img src="./images/game/game-single-1.jpg" alt=""></a>
+            <p>遊戲名稱</p>
+            <nav>
+              <a class="btn btn-warning" href="#">免費試玩</a>
+              <a class="btn btn-warning" href="#">金幣入場</a>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- 聊天系統 -->
+  <div class="chat">
+    <p class="chat-title">線上聊天
+      <a href="#" class="chat-close">
+        <i class="flaticon-close-2"></i>
+      </a>
+    </p>
+    <!-- 對話框放這邊 -->
+    <iframe src="https://chat.173yy.tw/" width="100%" marginwidth="0" marginheight="0" scrolling="No"
+      frameborder="0"></iframe>
+  </div>
+
+  <script src="javascripts/vendor.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@9/dist/sweetalert2.min.js"></script>
+  <script src="javascripts/script.js"></script>
+  <script>
+    // 遊戲頁面儲值按扭 是否離開 swal
+    $('.touchBar a:last-child, .play-aside_nav a:last-child').on('click', function (event) {
+      event.preventDefault();
+      swalCustomStyle.fire({
+        title: '確認離開遊戲前往儲值？',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: '確定',
+        cancelButtonText: '取消'
+      }).then((result) => {
+        if (result.value) {
+          window.location.href = "pay.html";
+        }
+      })
+    });
+  </script>
+</body>
+
+</html>
